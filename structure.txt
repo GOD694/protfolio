@@ -1,0 +1,58 @@
+src/
+│
+├── components/
+│   ├── layout/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │
+│   ├── sections/
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Contact.jsx
+│
+├── data/
+│   ├── projectsData.js
+│   ├── skillsData.js
+│
+├── hooks/
+│   ├── useScrollAnimation.js
+│
+├── utils/
+│   ├── constants.js
+│
+├── App.jsx
+├── main.jsx
+
+
+
+
+2nd type 
+
+src/
+│
+├── components/
+│   ├── layout/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │
+│   ├── sections/
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Contact.jsx
+│
+├── data/
+│   ├── projectsData.js
+│   ├── skillsData.js
+│
+├── hooks/
+│   ├── useScrollAnimation.js
+│
+├── utils/
+│   ├── constants.js
+│
+├── App.jsx
+├── main.jsx

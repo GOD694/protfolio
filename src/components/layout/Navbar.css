@@ -1,0 +1,133 @@
+.nav-wrapper {
+  z-index: 222;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.navbar {
+  box-shadow: 0px 0px 14px rgb(80, 87, 153);
+  width: 100%;
+  max-width: 1024px; /* Stops growing after 1024px */
+  background: #302b47;
+  border-radius: 20px;
+  padding: 15px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  color: #726e6e;
+  font-weight: bold;
+}
+
+/* Center Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-links li {
+  color: rgb(143, 144, 145);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: transform 0.1s ease;
+  color: rgb(255, 255, 255);
+  background: rgb(189, 43, 43);
+  cursor: pointer;
+}
+.logout-btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: transform 0.1s ease;
+  color: rgb(255, 255, 255);
+  background: rgb(189, 43, 43);
+  cursor: pointer;
+}
+
+.register-btn {
+  padding: 6px 14px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px grey;
+  border: none;
+  background: rgb(30, 43, 189);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.login-btn:active,
+.logout-btn:active,
+.register-btn:active {
+  transform: scale(0.8);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Hide mobile auth on desktop */
+.mobile-auth {
+  display: none;
+}
+
+/* ---------------- */
+/* Responsive */
+/* ---------------- */
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #352e4b;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 0.5rem;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+
+  .mobile-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

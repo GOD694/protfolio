@@ -1,0 +1,24 @@
+.app-container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  /* stack children vertically */
+  display: block;
+  position: relative;
+  
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  place-items: center;
+}
+
+.page1 {
+  background-color: #b5e48c;
+}
+
+.page2 {
+  background-color: #ffadad;
+}
