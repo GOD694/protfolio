@@ -27,6 +27,27 @@ const App = () => {
   })
   return (
     <>
+    <Helmet>
+        <title>Arslan | Full Stack Developer & Web Designer Portfolio</title>
+        <meta name="description" content="Welcome to Arslan's portfolio — a passionate Full Stack Developer specializing in React, Node.js, and modern web design. Explore projects, skills, and get in touch." />
+        <meta name="keywords" content="Arslan portfolio, full stack developer, web developer Pakistan, React developer, Node.js developer, frontend developer, hire developer" />
+        <meta name="author" content="Arslan" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://arslan-protfolio.vercel.app/" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://arslan-protfolio.vercel.app/" />
+        <meta property="og:title" content="Arslan | Full Stack Developer Portfolio" />
+        <meta property="og:description" content="Explore Arslan's portfolio — projects, skills, and contact." />
+        <meta property="og:image" content="https://arslan-protfolio.vercel.app/og-image.png" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Arslan | Full Stack Developer" />
+        <meta name="twitter:description" content="Passionate developer building modern web experiences." />
+        <meta name="twitter:image" content="https://arslan-protfolio.vercel.app/og-image.png" />
+      </Helmet>
       <div className="app-container">
 
         {loading ? <Loader /> : (<>
