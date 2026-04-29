@@ -3,6 +3,7 @@ import { Link, NavLink, Route, Routes } from 'react-router-dom';
 import Loader from "./components/layout/Loader";
 import Navbar from './components/layout/Navbar'
 import Home from "./components/pages/Home"
+import { Helmet } from 'react-helmet-async'
 import AdminLayout from "./components/layout/AdminLayout";
 const AdminContacts = lazy(() => import("./components/pages/AdminContacts"));
 const Logout = lazy(() => import("./components/pages/Logout"))
