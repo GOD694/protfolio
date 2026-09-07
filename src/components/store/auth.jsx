@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
 const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
   //logic all are here 
 
-  const storeLocalStorage = (servertoken,) => {
+  const storeLocalStorage = (servertoken) => {
 
     setToken(servertoken);
     return localStorage.setItem("token", servertoken)
